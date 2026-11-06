@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meritocratia Life Techs — controlled-environment cultivation and plant nutrition</title>
+<meta name="description" content="Meritocratia Life Techs develops controlled-environment cultivation systems and plant nutrition. Frederiksværk, Denmark. CVR 40618244.">
+<link rel="icon" href="favicon.svg">
+<meta property="og:title" content="Meritocratia Life Techs">
+<meta property="og:description" content="Controlled-environment cultivation and plant nutrition. Frederiksværk, Denmark.">
+<meta property="og:image" content="og.png">
+<style>
+  :root{
+    --bg:#141816;
+    --panel:#1B2120;
+    --cream:#E8F0E8;
+    --ink:#E8F0E8;
+    --muted:rgba(232,240,232,.62);
+    --orange:#D9692B;
+    --rule:rgba(232,240,232,.13);
+    --max:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font:400 17px/1.65 "Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;z-index:10;
+    background:rgba(20,24,22,.82);
+    backdrop-filter:saturate(180%) blur(12px);
+    border-bottom:1px solid var(--rule);
+  }
+  .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .mark{display:flex;align-items:center;gap:14px;text-decoration:none}
+  .mark img{width:40px;height:40px;display:block}
+  .mark .word{display:flex;flex-direction:column;gap:3px}
+  .mark .word b{
+    font-size:13px;letter-spacing:.30em;font-weight:600;
+    color:var(--orange);line-height:1;
+  }
+  .mark .word i{
+    font-style:normal;font-size:8.5px;letter-spacing:.55em;font-weight:600;
+    color:var(--orange);line-height:1;
+  }
+  .mark span{
+    font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;
+    font-weight:600;color:var(--cream);
+  }
+  nav{display:flex;gap:32px;align-items:center}
+  nav a{
+    font-size:14px;letter-spacing:.04em;text-decoration:none;
+    color:var(--muted);transition:color .18s;
+  }
+  nav a:hover{color:var(--cream)}
+  @media(max-width:720px){nav{display:none}}
+
+  /* ---------- hero ---------- */
+  .hero{padding:clamp(72px,11vw,132px) 0 clamp(56px,8vw,96px)}
+  .eyebrow{
+    display:flex;align-items:center;gap:12px;
+    font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--orange);font-weight:600;margin:0 0 28px;
+  }
+  .eyebrow::before{content:"";width:34px;height:1px;background:var(--orange);opacity:.7}
+  h1{
+    font-size:clamp(36px,6.2vw,66px);
+    line-height:1.06;letter-spacing:-.025em;
+    font-weight:500;margin:0 0 30px;max-width:19ch;color:var(--cream);
+  }
+  .lede{font-size:clamp(17px,2.1vw,21px);line-height:1.6;color:var(--muted);max-width:56ch;margin:0}
+  .lede strong{color:var(--cream);font-weight:500}
+
+  /* ---------- sections ---------- */
+  section{padding:clamp(52px,7vw,84px) 0;border-top:1px solid var(--rule)}
+  .label{
+    font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;margin:0 0 34px;
+  }
+  h2{
+    font-size:clamp(23px,3vw,30px);font-weight:500;letter-spacing:-.015em;
+    color:var(--cream);margin:0 0 22px;
+  }
+  p{margin:0 0 18px;max-width:64ch}
+  p:last-child{margin-bottom:0}
+
+  .grid{
+    display:grid;gap:1px;background:var(--rule);
+    border:1px solid var(--rule);border-radius:3px;overflow:hidden;
+    grid-template-columns:repeat(3,1fr);
+  }
+  @media(max-width:820px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel);padding:32px 28px 34px}
+  .card .num{
+    font-size:11.5px;letter-spacing:.16em;color:var(--orange);
+    font-weight:600;display:block;margin-bottom:16px;
+  }
+  .card h3{font-size:18px;font-weight:600;margin:0 0 12px;color:var(--cream);letter-spacing:-.01em}
+  .card p{font-size:15.5px;line-height:1.6;color:var(--muted);margin:0}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  @media(max-width:820px){.two{grid-template-columns:1fr;gap:34px}}
+
+  /* ---------- facts ---------- */
+  dl.facts{
+    display:grid;grid-template-columns:170px 1fr;
+    gap:0;margin:0;border-top:1px solid var(--rule);
+  }
+  dl.facts dt{
+    padding:16px 0;border-bottom:1px solid var(--rule);
+    font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;
+  }
+  dl.facts dd{
+    padding:16px 0;margin:0;border-bottom:1px solid var(--rule);
+    font-size:16px;
+  }
+  @media(max-width:560px){
+    dl.facts{grid-template-columns:1fr}
+    dl.facts dt{padding-bottom:2px;border-bottom:none}
+    dl.facts dd{padding-top:0}
+  }
+
+  /* ---------- contact ---------- */
+  .contact{background:var(--panel);border-top:none}
+  .contact h2{color:var(--cream)}
+  .contact .label{color:var(--muted)}
+  .contact a.mail{
+    display:inline-block;font-size:clamp(20px,3.4vw,30px);letter-spacing:-.01em;
+    color:var(--orange);text-decoration:none;border-bottom:1px solid rgba(217,105,43,.45);
+    padding-bottom:6px;transition:border-color .18s;
+  }
+  .contact a.mail:hover{border-color:var(--orange)}
+  .contact p{color:var(--muted)}
+  .contact .addr{margin-top:34px;font-size:15px;line-height:1.8;color:var(--muted)}
+
+  footer{
+    background:var(--panel);color:rgba(232,240,232,.45);
+    padding:0 0 40px;font-size:13px;
+  }
+  footer .row{
+    display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between;
+    border-top:1px solid var(--rule);padding-top:24px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="mark" href="#top">
+      <img src="mark.svg" alt="Meritocratia Life Techs">
+      <span class="word"><b>MERITOCRATIA</b><i>LIFE TECHS</i></span>
+    </a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#company">Company</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero wrap">
+    <p class="eyebrow">Frederiksværk, Denmark · Est. 2026</p>
+    <h1>Growing food where the climate is under control.</h1>
+    <p class="lede">
+      Meritocratia Life Techs develops <strong>controlled-environment cultivation systems</strong>
+      and the plant nutrition that goes with them — built from a decade of hands-on work in
+      hydroponics, aeroponics and microbial control.
+    </p>
+  </div>
+
+  <section id="work">
+    <div class="wrap">
+      <p class="label">Work</p>
+      <h2>Three things we do</h2>
+      <div class="grid">
+        <div class="card">
+          <span class="num">01</span>
+          <h3>Cultivation systems</h3>
+          <p>Growing systems for protected environments: media design, irrigation, root-zone
+             climate and structural framing. Developed and tested in our own facility.</p>
+        </div>
+        <div class="card">
+          <span class="num">02</span>
+          <h3>Plant nutrition</h3>
+          <p>Media and nutrition formulations, including biological approaches to keeping the
+             root zone healthy rather than sterilising it.</p>
+        </div>
+        <div class="card">
+          <span class="num">03</span>
+          <h3>Production</h3>
+          <p>Small-scale, high-value crops grown under cover and sold close to home — starting
+             with microgreens.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach">
+    <div class="wrap two">
+      <div>
+        <p class="label">Approach</p>
+        <h2>Measure the whole system, not the parts</h2>
+        <p>
+          A plant, a medium and the microbial community in it form one system. None of them
+          behaves the same alone, and a number taken from one of them tells you very little
+          about the other two.
+        </p>
+        <p>
+          We build systems we can actually observe: where the root zone can be sampled, where
+          a change in nutrition shows up as a measurable difference, and where a bad result is
+          a result.
+        </p>
+      </div>
+      <div>
+        <p class="label">Background</p>
+        <h2>Biochemistry, applied</h2>
+        <p>
+          The company is founded on a background in biochemistry and molecular biology from the
+          University of Copenhagen, followed by independent development of hydroponic and
+          aeroponic systems from 2016 onward.
+        </p>
+        <p>
+          That work has run through bamboo-framed growing towers, chamomile-based media trials,
+          and a sunken greenhouse in Frederiksværk — all of it built by hand before it was
+          written down.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="company">
+    <div class="wrap">
+      <p class="label">Company</p>
+      <h2>Details</h2>
+      <dl class="facts">
+        <dt>Legal name</dt><dd>Meritocratia Life Techs</dd>
+        <dt>Form</dt><dd>Sole proprietorship (enkeltmandsvirksomhed)</dd>
+        <dt>CVR</dt><dd>40618244</dd>
+        <dt>Founded</dt><dd>November 2026</dd>
+        <dt>Address</dt><dd>Askevej 28, 3300 Frederiksværk, Denmark</dd>
+        <dt>Activity</dt><dd>Research and experimental development in natural science and engineering; horticulture</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <p class="label">Contact</p>
+      <h2>Get in touch</h2>
+      <p>For cultivation partnerships, supply enquiries or press.</p>
+      <p style="margin-top:26px">
+        <a class="mail" href="mailto:hello@meritocratialife.tech">hello@meritocratialife.tech</a>
+      </p>
+      <div class="addr">
+        Meritocratia Life Techs<br>
+        Askevej 28, 3300 Frederiksværk<br>
+        CVR 40618244
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="row">
+        <span>© <span id="y">2026</span> Meritocratia Life Techs</span>
+        <span>Frederiksværk, Denmark</span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
