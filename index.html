@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Meritocratia Life Techs — controlled-environment cultivation and plant nutrition</title>
 <meta name="description" content="Meritocratia Life Techs develops controlled-environment cultivation systems and plant nutrition. Frederiksværk, Denmark. CVR 40618244.">
-<link rel="icon" href="favicon.svg">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <meta property="og:title" content="Meritocratia Life Techs">
 <meta property="og:description" content="Controlled-environment cultivation and plant nutrition. Frederiksværk, Denmark.">
 <meta property="og:image" content="og.png">
@@ -28,6 +31,8 @@
     color:var(--ink);
     font:400 17px/1.65 "Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
     -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    font-feature-settings:"kern" 1,"liga" 1;
   }
   a{color:inherit}
   .wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
@@ -40,15 +45,17 @@
     border-bottom:1px solid var(--rule);
   }
   .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
-  .mark{display:flex;align-items:center;gap:14px;text-decoration:none}
-  .mark img{width:40px;height:40px;display:block}
-  .mark .word{display:flex;flex-direction:column;gap:3px}
+  .mark{display:flex;align-items:center;gap:15px;text-decoration:none}
+  .mark img{width:46px;height:46px;display:block;flex:none}
+  .mark .word{display:flex;flex-direction:column;gap:5px}
   .mark .word b{
-    font-size:13px;letter-spacing:.30em;font-weight:600;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:15px;letter-spacing:.335em;font-weight:600;
     color:var(--orange);line-height:1;
   }
   .mark .word i{
-    font-style:normal;font-size:8.5px;letter-spacing:.55em;font-weight:600;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style:normal;font-size:9px;letter-spacing:.70em;font-weight:600;
     color:var(--orange);line-height:1;
   }
   .mark span{
@@ -64,7 +71,7 @@
   @media(max-width:720px){nav{display:none}}
 
   /* ---------- hero ---------- */
-  .hero{padding:clamp(72px,11vw,132px) 0 clamp(56px,8vw,96px)}
+  .hero{padding:clamp(56px,8vw,92px) 0 clamp(44px,5.5vw,68px)}
   .eyebrow{
     display:flex;align-items:center;gap:12px;
     font-size:12px;letter-spacing:.2em;text-transform:uppercase;
@@ -74,10 +81,10 @@
   h1{
     font-size:clamp(36px,6.2vw,66px);
     line-height:1.06;letter-spacing:-.025em;
-    font-weight:500;margin:0 0 30px;max-width:19ch;color:var(--cream);
+    font-weight:500;margin:0 0 26px;max-width:19ch;color:var(--cream);
   }
   .lede{font-size:clamp(17px,2.1vw,21px);line-height:1.6;color:var(--muted);max-width:56ch;margin:0}
-  .lede strong{color:var(--cream);font-weight:500}
+  .lede strong{color:var(--cream);font-weight:600}
 
   /* ---------- sections ---------- */
   section{padding:clamp(52px,7vw,84px) 0;border-top:1px solid var(--rule)}
@@ -157,7 +164,7 @@
 <header>
   <div class="wrap bar">
     <a class="mark" href="#top">
-      <img src="mark.svg" alt="Meritocratia Life Techs">
+      <img src="mark.png" alt="Meritocratia Life Techs">
       <span class="word"><b>MERITOCRATIA</b><i>LIFE TECHS</i></span>
     </a>
     <nav>
